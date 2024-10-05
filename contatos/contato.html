@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+</head>
+
+<body>
+    <h1>Meus Contatos</h1>
+    <ul>
+        <li>Telefone: (67)98483-2983</li>
+        <li>Email: Jucardasdas777@gmail.com</li>
+    </ul>
+
+    <form action="mailto:miguelgamerbr1023@gmail.com" method="POST" enctype="text/plain">
+        <label for="">Nome Completo</label>
+        <input type="text" name="Nome" /> <br /> <br />
+        <label type="">Escolha uma Cor</label>
+        <input type="color" name="cor" /> <br /> <br />
+        <label for="">Marque essa Caixinha se quiser receber novidades</label>
+        <input type="checkbox" name="Quer receber Novidades" /> <br /> <br />
+        <label type="">Digite a sua Senha</label>
+        <input type="password" name="senha" /> <br /> <br />
+        <label type="">Escolha uma imagem do seu Cachorro</label> <br />
+        <input type="file" name="Foto do Cachorro" /> <br /> <br />
+        <label type="start">Data de Nascimento</label> <br />
+        <input type="date" id="start" value="2024/07/20" min="1960/01/01" max="2024/07/20" name="Data de Nascimento" />
+
+        <br /> <br />
+        <fieldset>
+            <legend>Selecione a Opção Correta:</legend>
+
+            <div>
+                <input type="radio" id="solteiro" name="estado civil" value="solteiro" checked name="solteiro" />
+                <label for="solteiro">Solteiro</label>
+            </div>
+
+            <div>
+                <input type="radio" id+="casado(a)" name="estado civil" value="casado(a)" name="casado" />
+                <label for="casado(a)">Casado(a)</label>
+            </div>
+
+            <div>
+                <input type="radio" id="viuvo(a)" name="estado civil" value="viuvo(a)" name="viúvo" />
+                <label for="viuvo(a)">Viuvo(a)</label>
+            </div>
+        </fieldset>
+        <br /> <br />
+        <input type="submit" />
+    </form>
+</body>
+
+</html>
